@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'PassionOne-Regular';
+    src:url('fontes/PassionOne-Regular.ttf.woff') format('woff'),
+        url('./fontes/PassionOne-Regular.ttf.svg#PassionOne-Regular') format('svg'),
+        url('fontes/PassionOne-Regular.ttf.eot'),
+        url('fontes/PassionOne-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    background-color: black;
+    min-height: 130px;
+    height: 18vw;
+}
+header h1{
+    font-family: 'PassionOne-Regular', sans-serif;
+    font-size: 8vw;
+    color: white;
+    
+}
+
+header p {
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'PassionOne-Regular' sans-serif;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    align-items: initial;
+    max-width: 600px;
+}
+
+
