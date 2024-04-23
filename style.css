@@ -10,20 +10,27 @@
         font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
-    align-items: center;
+    display: flex; /* Define o header como um contêiner flexível */
+    flex-direction: column; /* Alinha os itens em uma coluna vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
     background-color: black;
     min-height: 130px;
-    height: 18vw;
+    height: 20vw;
+    margin-bottom: 65px;
 }
 header h1{
     font-family: 'PassionOne-Regular', sans-serif;
-    font-size: 8vw;
+    font-size: 11vw;
     color: white;
     
 }
@@ -44,13 +51,66 @@ header p a:hover {
     text-decoration: underline;
 }
 
-h2{
-    font-family: 'Courier New', Courier, monospace;
-}
+h2 {
+    font-family: "Sriracha", cursive;
+    font-size: 48px;
+    font-weight: 400;
+    /* font-weight: bold; */
+    font-style: italic;
+    line-height: 2em;
+  }
 
 section {
+    margin-left: 2em;
     align-items: initial;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
+section.img01 {
+    background-image: url("imagens/background001.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; /* a imagem fica fixada na tela, enquanto o texto gira */
+    
+}
+.img01 h2 {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    
+}
 
+section.img02 {
+    background-image: url("imagens/background002.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; /* a imagem fica fixada na tela, enquanto o texto gira */
+    
+}
+
+.img02 h2 {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    
+}
+
+footer {
+    height: 3vw;
+    background-color: black;
+    text-align: center;
+}
+footer p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bolder;
+    
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
