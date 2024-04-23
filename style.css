@@ -32,13 +32,28 @@ header h1{
     font-family: 'PassionOne-Regular', sans-serif;
     font-size: 11vw;
     color: white;
+    font-variant: small-caps; /*deixa as letra maisculas, porem a primeira letra fica maior */
     
 }
 
+@media (max-width: 500px) {
+    section > h2 {
+        font-size: 20px;
+    }
+}
+
+
 header p {
     color: white;
-    font-size: 1.4vw;
+    font-size: 1.7vw;
     font-family: 'PassionOne-Regular' sans-serif;
+    
+}
+
+@media (max-width: 500px) {
+    header > p {
+        font-size: 20px;
+    }
 }
 
 header p a {
@@ -94,14 +109,18 @@ section.img02 {
 }
 
 footer {
-    height: 3vw;
+    /* height: 3vw; */
+    min-height: 5vh; /* O footer ocupará toda a altura da janela de visualização */
     background-color: black;
     text-align: center;
 }
 footer p {
+    
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: bolder;
+    padding-top: 5px;
+  
     
 }
 
@@ -113,4 +132,10 @@ footer p a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    footer > p {
+        font-size: 15px;
+    }
 }
